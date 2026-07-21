@@ -86,6 +86,16 @@ bash cs336_basics/run_scripts/silu.sh
 ![111](assets/train-loss.png)
 ![222](assets/val-loss.png)
 
+## 模型推理
+
+```
+uv run python -m cs336_basics.inference \
+  --checkpoint_path autodl_model_result/TinyStories_baseline/ckpt.pt \
+  --tokenizer_dir data/TinyStoriesV2-GPT4-train \
+  --device cpu
+
+```
+
 
 
 
